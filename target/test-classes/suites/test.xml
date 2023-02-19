@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All tests" verbose="1">
+    <test name="UI tests" parallel="classes">
+        <classes>
+            <class name="ui.mainPage.ContentTest"/>
+            <class name="ui.mainPage.ErrorDisplayingTest"/>
+            <class name="ui.mainPage.InputDataTypeTest"/>
+            <class name="ui.mainPage.ResultDisplayingTest"/>
+        </classes>
+    </test>
+    <test name="API tests"  parallel="classes">
+        <classes>
+            <class name="api.FactorialCalculationTest"/>
+        </classes>
+    </test>
+</suite>

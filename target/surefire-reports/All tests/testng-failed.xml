@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="classes" name="UI tests(failed)" verbose="0">
+    <classes>
+      <class name="ui.mainPage.InputDataTypeTest">
+        <methods>
+          <include name="init"/>
+          <include name="quitDriver"/>
+          <include name="inputDataTypeValidation" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- ui.mainPage.InputDataTypeTest -->
+      <class name="ui.mainPage.ResultDisplayingTest">
+        <methods>
+          <include name="init"/>
+          <include name="quitDriver"/>
+          <include name="resultDisplayingFormat" invocation-numbers="2 3"/>
+        </methods>
+      </class> <!-- ui.mainPage.ResultDisplayingTest -->
+    </classes>
+  </test> <!-- UI tests(failed) -->
+  <test thread-count="5" parallel="classes" name="API tests(failed)" verbose="0">
+    <classes>
+      <class name="api.FactorialCalculationTest">
+        <methods>
+          <include name="calculationTest" invocation-numbers="1 5"/>
+        </methods>
+      </class> <!-- api.FactorialCalculationTest -->
+    </classes>
+  </test> <!-- API tests(failed) -->
+</suite> <!-- Failed suite [All tests] -->
