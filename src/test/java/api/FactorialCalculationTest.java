@@ -1,6 +1,5 @@
 package api;
 
-import org.springframework.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -31,7 +30,7 @@ public class FactorialCalculationTest {
                 .post("/factorial")
                 .then()
                 .assertThat()
-                .statusCode(HttpStatus.OK.value())
+                .statusCode(200)
                 .extract()
                 .body()
                 .path("answer")
