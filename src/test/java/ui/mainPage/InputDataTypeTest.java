@@ -22,16 +22,16 @@ public class InputDataTypeTest extends BaseTest {
     @DataProvider
     public Object[] dataTypes() {
         return new Object[][]{
-                {"Not int values with dot", "1.1"},
-                {"Not int values with coma", "1,1"},
-                {"Not int values with arithmetic sign", "1+1"},
-                {"Not int values with alphabet sign", "1e"},
-                {"Negative values with minus", "-1"},
+                {"1.1"},
+                {"1,1"},
+                {"1+1"},
+                {"1e"},
+                {"-1"},
         };
     }
 
     @Test(dataProvider = "dataTypes")
-    private void inputDataTypeValidation(String description, String num) {
+    private void inputDataTypeValidation(String num) {
         mainPage.getInputField().sendKeys(num);
         Assert.assertTrue(mainPage.clickCalculationButtonAndWaitResult(), "Calculation result is not displayed");
         incorrectInputErrorCheck(mainPage);
