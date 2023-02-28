@@ -19,6 +19,7 @@ public class InputDataTypeTest extends BaseTest {
         mainPage.goToMainPage();
     }
 
+    //    add hardcode for expectation
     @DataProvider
     public Object[] dataTypes() {
         return new Object[][]{

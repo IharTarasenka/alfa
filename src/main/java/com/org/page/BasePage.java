@@ -6,8 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
+//    use config files for URI
     protected static final String MAIN_PAGE_URL = "https://qainterview.pythonanywhere.com/";
-//    protected static final String MAIN_PAGE_URL = "https://google.com";
 
     protected WebDriver webDriver;
 

@@ -5,6 +5,7 @@ import org.testng.Assert;
 
 public class MainPageChecker {
 
+//    use soft assert
     public static void incorrectInputErrorCheck(MainPage mainPage){
         Assert.assertEquals(mainPage.getInputField().getAttribute("style"), "border: 2px solid red;");
         Assert.assertEquals(mainPage.getResultField().getText(), "Please enter an integer");

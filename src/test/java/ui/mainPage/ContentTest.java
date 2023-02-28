@@ -16,6 +16,7 @@ public class ContentTest extends BaseTest {
         mainPage.goToMainPage();
     }
 
+//    add constants for expectation
     @Test
     private void headerTitle() {
         Assert.assertTrue(mainPage.getHeader().isDisplayed(), "Page header is not displayed");

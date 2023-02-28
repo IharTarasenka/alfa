@@ -18,6 +18,8 @@ public class ResultDisplayingTest extends BaseTest {
         mainPage = new MainPage();
         mainPage.goToMainPage();
     }
+
+//    add hardcode  for expectation
     @DataProvider
     public Object[] inputData() {
         return new Object[][]{

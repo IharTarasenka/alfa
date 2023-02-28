@@ -23,12 +23,12 @@ public class DriverManager {
     public static void quitDriver() {
         if (webDriverContainer.get() != null) {
             webDriverContainer.get().quit();
-
         }
     }
 
+//    add configuration and add run for several browsers
     private static void initDriver() {
-        WebDriverManager.chromedriver(). setup();
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--window-size=1920,1200");
         WebDriver webDriver = new ChromeDriver(options);
